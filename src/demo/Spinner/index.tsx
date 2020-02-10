@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import css from './Slide.module.css';
+import css from './Spinner.module.css';
 
 import useEasing from '../../the-hook';
 
-const Slide = () => {
+const Spinner = () => {
   const [goal, setGoal] = useState(0);
   const slide = useEasing(goal, { damping: 0.6, duration: 0.5 });
 
@@ -20,4 +20,4 @@ const Slide = () => {
   );
 }
 
-export default Slide;
+export default Spinner;

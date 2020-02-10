@@ -1,0 +1,9 @@
+.main {
+  --background: var(--background-alt);
+  --color: var(--color-alt);
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  border: none;
+
+  overflow-x: scroll;
+}
