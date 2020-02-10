@@ -2,6 +2,8 @@ The Easing Hook
 ===============
 A react hook for declarative animations.
 
+![CI](https://github.com/ashfordneil/the-easing-hook/workflows/CI/badge.svg)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

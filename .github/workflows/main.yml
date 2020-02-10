@@ -1,0 +1,24 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - run: yarn
+    - run: yarn build
+      env:
+        GENERATE_SOURCEMAP: false
+    - uses: actions-hub/gcloud@master
+      env:
+        PROJECT_ID: ${{ secrets.GOOGLE_PROJECT }}
+        APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
+        CLI: gsutil
+      with:
+        args: rsync -rd build gs://easing.neilashford.com
+      
+
