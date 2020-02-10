@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import css from './App.module.css';
 
+import Link from '../Link';
+
 const App = () => {
   return (
     <div className={css.main}>
@@ -10,14 +12,9 @@ const App = () => {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
-          className={css.link}
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href="https://reactjs.org">
           Learn React
-        </a>
+        </Link>
       </header>
     </div>
   );

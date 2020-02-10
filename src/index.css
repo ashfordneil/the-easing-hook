@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html {
+  /* base values, to be overridden if necessary down the tree */
+  --background: white;
+  --color: black;
+  --brand-color: #61dafb;
+
+  /* other theme values, to be used to override the above */
+  --background-alt: #282c34;
+  --color-alt: white;
+}
