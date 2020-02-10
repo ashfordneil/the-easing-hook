@@ -15,14 +15,18 @@ code {
 html {
   scroll-behavior: smooth;
 
-  /* base values, to be overridden if necessary down the tree */
-  --background: white;
-  --color: black;
-  --brand-color: #61dafb;
+  /* theme values, to be used to override the above */
+  --background-base: white;
+  --color-base: black;
 
-  /* other theme values, to be used to override the above */
   --background-alt: #282c34;
   --color-alt: white;
+
+  --brand-color: #61dafb;
+
+  /* base values, to be overridden if necessary down the tree */
+  --background: var(--background-base);
+  --color: var(--color-base);
 }
 
 * {

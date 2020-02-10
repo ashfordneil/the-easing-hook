@@ -5,6 +5,7 @@ import css from './Content.module.css';
 import Code from '../Code';
 
 import Spinner from '../demo/Spinner';
+import Projectile from '../demo/Projectile';
 
 const Content = () => (
   <main id="content" className={css.main}>
@@ -27,6 +28,22 @@ const Content = () => (
       then you specify what value you want to currently be on the screen. The
       hook gives you an intermediate value to put on the screen, that will
       smoothly transition between the old and new values.
+    </p>
+    <h3>Why should I use it?</h3>
+    <p>
+      The key advantage of The Easing Hook is that it is purely declarative to
+      use, and that it makes react the single source of truth for your
+      animations. Other animation libraries ask you to provide a
+      <code>ref</code> that points to the element being animated, and require
+      you to manually reconcile the state of the animation with the state of
+      your application. The Easing Hook brings control back to within your
+      application, and gives you total flexibility over what to do with your
+      animation.
+    </p>
+    <Projectile />
+    <p>
+      With a single call to The Easing Hook (and some parametric equations), it
+      is possible to trace a projectile moving through the air.
     </p>
   </main>
 );
