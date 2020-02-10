@@ -13,6 +13,8 @@ code {
 }
 
 html {
+  scroll-behavior: smooth;
+
   /* base values, to be overridden if necessary down the tree */
   --background: white;
   --color: black;
@@ -21,4 +23,9 @@ html {
   /* other theme values, to be used to override the above */
   --background-alt: #282c34;
   --color-alt: white;
+}
+
+* {
+  background-color: var(--background);
+  color: var(--color);;
 }

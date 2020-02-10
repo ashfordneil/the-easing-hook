@@ -3,16 +3,13 @@
   --background: var(--background-alt);
   --color: var(--color-alt);
 
-  text-align: center;
-
-  background-color: var(--background);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  padding-left: 4ch;
+
   font-size: calc(10px + 2vmin);
-  color: var(--color);;
 }
 
 .subheading {

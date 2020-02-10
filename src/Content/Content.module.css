@@ -1,0 +1,9 @@
+.main {
+  min-height: 100vh;
+  max-width: 90ch;
+  width: 100%;
+
+  margin: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
